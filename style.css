@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+h1 {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#add-itens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+#add-itens * {
+    height: 30px;
+
+    margin-right: 10px;
+}
+
+#add-itens p {
+    display: flex;
+    align-items: center;
+
+    font-size: 17px;
+}
+
+#add-itens input {
+    font-size: 15.5px;
+}
+
+#all-itens {
+    display: flex;
+    flex-direction: column;
+}
+
+#all-itens * {    
+    padding-bottom: 10px;
+    display: inline;
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+li::before {
+    content: "• "; /* Insert content that looks like bullets */
+}
+
+#all-itens li {
+    margin-right: 10px;
+}
+
+#all-itens button {
+    height: 22px;
+}
+
+
+
