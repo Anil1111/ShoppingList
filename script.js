@@ -1,21 +1,17 @@
 function buy (name) {
     elem = document.createElement ("div");
     elem.className = "item"
-
     const li = document.createElement("li");
     li.textContent = name;
-
     const buttom = document.createElement("button")
     buttom.textContent = "Delete"
     buttom.setAttribute("delete_buy", "");
-
     elem.appendChild (li)
     elem.appendChild (buttom)
     return elem
 }
 
 function addDiv (event){
-    event.preventDefault();
     divAdd = event.target.parentNode
     contentText = divAdd
     text = divAdd.children[1].value
@@ -30,7 +26,6 @@ function addDiv (event){
 }
 
 function deleteDiv (event) {
-    event.preventDefault()
     event.target.parentNode.remove()
 }
 
@@ -40,16 +35,3 @@ function main () {
 }
 
 main()
-
-
-
-
-
-
-
-
-
-/* <div id="item">
-    <li>Milk</li>
-    <button>Delete</button>
-</div> */
